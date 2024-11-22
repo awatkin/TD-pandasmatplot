@@ -1,4 +1,4 @@
-# Offical files
+# Official files
 
 In this directory is the official files for the exam and solution for it 
 
