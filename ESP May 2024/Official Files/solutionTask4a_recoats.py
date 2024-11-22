@@ -128,8 +128,96 @@ def get_total_data(total_choice):
 # new subroutine to total cash sales for each stream
 def cash_total():
     df = df_reader()  # gets a fresh clean dataframe
-    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum().sum(axis=1)
+
+    ''' This section works out cash sales by each of the revenue streams and outputs a graph'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum()  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Cash for each revenue source:")
+    df2 = df1.loc['Cash']  # just focuses on the cash
+    print(df2)
+    df2.plot.bar()  # uses df1 for a bar chart
+    plt.title("Cash across revenue streams")  # sets the title
+    plt.show()  # shows the chart
+
+    ''' This section works out cash sales by each day of the week and outputs a graph'''
+
+    df1 = df.groupby(['Day','Pay Type']).sum().sum(axis=1)  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Cash for each day:")
+    df2 = df1[df1.index.get_level_values('Pay Type') == 'Cash']  # splits out and hides the card payment element
+    print(df2)
+    df2.plot.bar()  # uses df1 for a bar chart
+    plt.title("Cash across Days")  # sets the title
+    plt.show()
+
+    ''' This section works out the total cash sales combined into one value'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum().sum(axis=1)  # totals cash and sales, removes the days
+
+    print("The total sales for Cash is:")
+    print(df1.loc['Cash'])
+
+
+#new subroutine for card payments
+def card_total():
+    df = df_reader()  # gets a fresh clean dataframe
+
+    ''' This section works out card sales by each of the revenue streams and outputs a graph'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum()  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Card for each revenue source:")
+    df2 = df1.loc['Card']  # just focuses on the cash
+    print(df2)
+    df2.plot.bar()  # uses df1 for a bar chart
+    plt.title("Card across revenue streams")  # sets the title
+    plt.show()  # shows the chart
+
+    ''' This section works out card sales by each day of the week and outputs a graph'''
+
+    df1 = df.groupby(['Day','Pay Type']).sum().sum(axis=1)  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Card for each day:")
+    df2 = df1[df1.index.get_level_values('Pay Type') == 'Card']  # splits out and hides the card payment element
+    print(df2)
+    df2.plot.bar()  # uses df1 for a bar chart
+    plt.title("Cardacross Days")  # sets the title
+    plt.show()
+
+    ''' This section works out the total card sales combined into one value'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum().sum(axis=1)  # totals cash and sales, removes the days
+
+    print("The total sales for Cash is:")
+    print(df1.loc['Card'])
+
+
+# new subroutine to show both rev sources against each other
+def both_total():
+    df = df_reader()  # gets a fresh clean dataframe
+
+    ''' This section works out sales by each of the revenue streams and outputs a graph'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum()  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Card for each revenue source:")
     print(df1)
+    df1.plot.bar()  # uses df1 for a bar chart
+    plt.title("Revenue revenue streams")  # sets the title
+    plt.show()  # shows the chart
+
+    ''' This section works out cash sales by each day of the week and outputs a graph'''
+
+    df1 = df.groupby(['Day','Pay Type']).sum().sum(axis=1)  # this groups by pay type, then totals the sales for each rev stream
+    print("The total sales in Card for each day:")
+    print(df1)
+    df1.plot.bar()  # uses df1 for a bar chart
+    plt.title("Payment across Days")  # sets the title
+    plt.show()
+
+    ''' This section works out the total cash sales combined into one value'''
+
+    df1 = df.groupby('Pay Type')[['Tickets','Gift Shop','Snack Stand','Pictures']].sum().sum(axis=1)  # totals cash and sales, removes the days
+
+    print("The total sales for Cash is:")
+    print(df1)
+
 
 # new subroutine to calculate the totals for each payment type
 def payment_type_total():
@@ -138,9 +226,9 @@ def payment_type_total():
     if choice == "1":
         cash_total()
     elif choice == "2":
-        pass
+        card_total()
     elif choice == "3":
-        pass
+        both_total()
 
 
 # all code, as accepted convention, should be launched from a main()
