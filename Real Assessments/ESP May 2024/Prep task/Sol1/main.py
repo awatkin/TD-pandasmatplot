@@ -21,7 +21,7 @@ def revstreamtotals():  # Added a new subroutine for task 1
     df1 = df[['Tickets', 'Gift Shop', 'Snack Stand', 'Pictures']]  # Copies only needed columns from df to the new df1
     df1 = df1.sum()  # This runs a sum function on each column and makes it into a series
     df1.plot()  # sends the dataseries to matplotlib
-    plt.title("Sol 1: Revenue Stream Totals")  # Sets the title of the chart
+    plt.title("Sol1: Revenue Stream Totals")  # Sets the title of the chart
     plt.show()  # Triggers the chart to be shown to the user
     return df1  # This returns the calculated series
 

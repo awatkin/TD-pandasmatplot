@@ -10,11 +10,11 @@ Make sure to "Fork" the code.
 
 MAIN: This is the starting point for you to take and then work from 
 
-Sol 1: This the solution for task 1 below
-Sol 1,2: Also includes the solution to task 2
-Sol 1,2,3: Includes the solution to task 3
-Sol 1,2,3,4: Has all solutions
-final: Has all solutions and robustness built in and fully commented to support learning.
+Sol1: This the solution for task 1 below
+Sol2: Also includes the solution to task 2
+Sol3: Includes the solution to task 3
+Sol4: Has all solutions
+Solfinal: Has all solutions and robustness built in and fully commented to support learning.
 
 ## Task:
 

@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd  # bringing the pandas library for use
 import matplotlib.pyplot as plt  # Needed import using standard plt format
 
 
@@ -8,7 +8,10 @@ The solution must also identify trends and patterns over a period of time for:
 Completed in this code: The Total sales for each Revenue Streams
 Completed in this code: The average sales for AM vs PM for a selected Revenue Stream
 Completed in this code: The sales of a selected Revenue stream over a period of days selected by the user
-Completed in this code: A comparison of AM sales Vs PM sales combining all revenue streams.'''
+Completed in this code: A comparison of AM sales Vs PM sales combining all revenue streams.
+
+ADDED SECURE PROGRAMMING AND ROBUSTNESS
+'''
 
 
 #  solution 1, 2, 3 and 4 below
@@ -33,8 +36,19 @@ def ampmallstreams():  # New subroutine to solve task 4
 
 def revstreamdays():  # New subroutineto solve task 3
     df = getdf()  # gets in a clean dataframe
-    revstream = get_revstream_choice()  # gets the yusers revenue stream choice
-    numofdays = int(input("How many days do you want? "))  # takes the number of days they want to see in
+    revstream = get_revstream_choice()  # gets the users revenue stream choice
+    while True:  # added a while loop to stop errors from number of days entry
+        numofdays = input("How many days do you want? ")  # takes the number of days they want to see in
+        try:  # Tries the below code
+            int(numofdays)  # forces an int on the number
+        except Exception as e:  # if it fails, catch the exception
+            print("Not a valid number!")  # prints out an error message
+            print("Error Message ", str(e))
+            print("Please try again")  # prints out a prompt
+        else:  # if the code works
+            numofdays = int(numofdays)  # converts the number to an int
+            break  # breaks the while loop
+
     numofdays = numofdays * 2  # as eachday is 2 rows, multiplys the number
     df1 = df[['Day', 'Time', revstream]]  # Removes the columns of data not needed
     df1 = df1.iloc[:numofdays, :]  # Uses iloc to removce the rows now needed
@@ -65,7 +79,7 @@ def revstreamtotals():  # Added a new subroutine (at the top) to get totals
     df1 = df[['Tickets', 'Gift Shop', 'Snack Stand', 'Pictures']]  # Copies only needed columns from df to the new df1
     df1 = df1.sum()  # This runs a sum function on each column and makes it into a series
     df1.plot()  # sends the dataseries to matplotlib
-    plt.title("Sol 1: Revenue Stream Totals")  # Sets the title of the chart
+    plt.title("Sol1: Revenue Stream Totals")  # Sets the title of the chart
     plt.show()  # Triggers the chart to be shown to the user
     return df1  # This returns the calculated series
 
@@ -84,9 +98,10 @@ def menu():
         print("2. Show total sales for each revenue stream")  # Added a new menu option for solution 1
         print("3. Average sales for AM vs PM for a selected Revenue Stream")  # Added a new menu option for solution 2
         print("4. Sales for selected Revenue Stream for a number of days")  # Added a menu option for solution 3
-        print("5. AM vs PM for a selected Revenue Stream")  # Added a menu option for solution 4
+        print("5. AM vs PM for a selected Revenue Stream")  # Added a menu option for solution 4#
+        print("6. Quit")  # added option to exit software when done
 
-        main_menu_choice = input("Please enter the number of your choice (1-5): ")  # Adjusted text for more options
+        main_menu_choice = input("Please enter the number of your choice (1-6): ")  # Adjusted text for more options
 
         try:
             int(main_menu_choice)
@@ -95,7 +110,7 @@ def menu():
             print("You generated the following error: ", e)
             flag = True
         else:
-            if int(main_menu_choice) < 1 or int(main_menu_choice) > 5:  # changed 4 to 5 for option choices
+            if int(main_menu_choice) < 1 or int(main_menu_choice) > 6:  # changed 5 to 6 for option choices
                 print("Sorry, you did not enter a valid choice")
                 flag = True
             else:
@@ -145,34 +160,44 @@ def get_selected_item(item):
 
     return df2
 
-     
-main_menu = menu()
-if main_menu == 1:
 
-    revStream = get_revstream_choice()
- 
-    extracted_data = get_selected_item(revStream)
+def main():  # added a main as code should launch from main for security and robustness
+    while True:  # Added a while loop so code keeps working until quit
+        main_menu = menu()  # captures the main meny input
+        if main_menu == 1:
 
-    print("Here is the sales data for {} :".format(revStream))
-    print(extracted_data)
+            revStream = get_revstream_choice()
 
-elif main_menu == 2:  # New menu item checked for - solution 1
-    totals = revstreamtotals()  # captures the returned dataframe / series to print
-    print("Here is the total sales for each revenue stream:")  # Pre-cursor message for usability
-    print(totals)  # Prints out the returned data series
-elif main_menu == 3:  # New menu item checked for - solution 2
-    totals = amvspmsales()  # captures the returned results
-    print("Here is the average AM vs PM sales for a selected revenue stream:")  # message for readability
-    print(totals)  # prints out the returned data
-elif main_menu == 4:
-    totals = revstreamdays()
-    print("Here is the total sales for a selected revenue stream for your number of days:")  # Message for readability
-    print(totals)  # Prints the totals out for the user
-elif main_menu == 5:
-    totalsind, totals = ampmallstreams()  # captures the returned results
-    print("Here is the AM and PM sales for each of the Revenue Streams ")  # message for readability
-    print(totalsind)  # Outputs the results
-    print("Here is the total AM vs PM sales combining all Revenue Streams")
-    print(totals)
-else:
-    print('This part of the program is still under development')
+            extracted_data = get_selected_item(revStream)
+
+            print("Here is the sales data for {} :".format(revStream))
+            print(extracted_data)
+
+        elif main_menu == 2:  # New menu item checked for - solution 1
+            totals = revstreamtotals()  # captures the returned dataframe / series to print
+            print("Here is the total sales for each revenue stream:")  # Pre-cursor message for usability
+            print(totals)  # Prints out the returned data series
+        elif main_menu == 3:  # New menu item checked for - solution 2
+            totals = amvspmsales()  # captures the returned results
+            print("Here is the average AM vs PM sales for a selected revenue stream:")  # message for readability
+            print(totals)  # prints out the returned data
+        elif main_menu == 4:
+            totals = revstreamdays()
+            print("Here is the total sales for a selected revenue stream for your number of days:")  # for readability
+            print(totals)  # Prints the totals out for the user
+        elif main_menu == 5:
+            totalsind, totals = ampmallstreams()  # captures the returned results
+            print("Here is the AM and PM sales for each of the Revenue Streams ")  # message for readability
+            print(totalsind)  # Outputs the results
+            print("Here is the total AM vs PM sales combining all Revenue Streams")
+            print(totals)
+        elif main_menu == 6:  # Added option to be able to quit the code when done
+            print("thanks for using the system")  # leaving message for usability
+            print("Goodbye")  # followup usability message
+            quit()  # uses quit to exit code.
+        else:
+            print('This part of the program is still under development')
+
+
+if __name__ == "__main__":  # added condition to start the code, the right way
+    main()  # launches main, if the condition is met
