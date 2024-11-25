@@ -18,11 +18,6 @@ def main_menu():
         print("### 3. Problem 1a Total sales for each salesperson")  # New menu option added for task 1a.
         print("### 4. Problem 2 Show the total sales for each of the Brands")
         print("### 5. Problem 2a Show the total sales for each of the Car Models")
-        print("### 6. Problem 3 Compare the total sales of 1 or more brands")  # new menu option for problem 3
-        print("### 7. Problem 3a Compare the total sales of 1 or more models")  # new menu option for problem 3a
-        print("### 8. Extra Brand sales over time")  # new menu option for extra interpreation of problem 3
-        print("### 9. Extra Model sales over time")  # new menu option for extra interpreation of problem 3a
-
         choice = input('Enter your number selection here: ')
 
         try:
@@ -186,19 +181,6 @@ def total_model_sales():
     plt.show()  # displays the chart.
 
 
-# new subroutine to solve problem 3
-def compare_brand_total_sales():
-    df =  pd.read_csv("Task3_data.csv")
-
-    #nums = int(input("Enter a number of brands (up to 4) you Wish to compare"))
-    brands = ['Jeep','Ford']
-    df1 = df[['Brand','Value']]  # filters down to just brand and value
-    df1 = df1[df1['Brand'].isin(brands)]
-    df1.groupby('Brand').sum()
-    print(df1)
-
-
-
 # creates a new dataframe with the selected income source then creates a total row
 # outputs the final total in a message
 def get_total_data(total_choice):
@@ -225,8 +207,7 @@ elif main_menu_choice == "4":  # new condition on selection statement for Proble
     total_brand_sales()
 elif main_menu_choice == "5":  # new condition on selection statement for Problem 2a.
     total_model_sales()
-elif main_menu_choice == "6":  # new condition on selection statement for Problem 2a.
-    compare_brand_total_sales()
+
 
 ''' tasks to be completed
 
