@@ -16,6 +16,8 @@ def main_menu():
         print("### 1. Total sales income from different models")
         print("### 2. Problem 1 Sales over time for a specific sales person")  # New menu option added for task 1.
         print("### 3. Problem 1a Total sales for each salesperson")  # New menu option added for task 1a.
+        print("### 4. Problem 2 Show the total sales for each of the Brands")
+        print("### 5. Problem 2a Show the total sales for each of the Car Models")
         choice = input('Enter your number selection here: ')
 
         try:
@@ -150,6 +152,35 @@ def salesperson_indi_totals():  # declartion of the new subroutine
     plt.show()
 
 
+# new subroutine for total brand sales to solve problem 2
+def total_brand_sales():
+    df = pd.read_csv("Task3_data.csv")  # read in the fresh new dataframe
+
+    df1 = df[['Brand','Value']]  # removes unneeded columns of data
+    df1 = df1.groupby('Brand').sum()  # totals the sles for each of the brands
+
+    print("The total sales for each brand is :")
+    print(df1)  # prints out the data for the user.
+
+    df1.plot.bar()  # plots the data as a chart
+    plt.title("Total sales for each brand")  # sets the plt title
+    plt.show()  # shows the chart.
+
+
+def total_model_sales():
+    df = pd.read_csv("Task3_data.csv")  # read in the fresh new dataframe
+
+    df1 = df[['Car Model','Value']]  # removes unneeded columns of data
+    df1 = df1.groupby('Car Model').sum()  # totals the sles for each of the brands
+
+    print("The total sales for each Model is :")
+    print(df1)  # prints out the data for the user.
+
+    df1.plot.bar()  # plots the data to a bar chart
+    plt.title("Total sales for each model")  # sets the title
+    plt.show()  # displays the chart.
+
+
 # creates a new dataframe with the selected income source then creates a total row
 # outputs the final total in a message
 def get_total_data(total_choice):
@@ -170,18 +201,15 @@ if main_menu_choice == "1":
 elif main_menu_choice == "2":  # new condition on selection statement for Problem 1.
     sales_person_choice = sales_person_menu()  # calls a subroutine to find the sales person
     sales_person_overtime(sales_person_choice)
-elif main_menu_choice == "3":  # new condition on selection statement for Problem 1.
+elif main_menu_choice == "3":  # new condition on selection statement for Problem 1a.
     salesperson_indi_totals()
-
+elif main_menu_choice == "4":  # new condition on selection statement for Problem 2.
+    total_brand_sales()
+elif main_menu_choice == "5":  # new condition on selection statement for Problem 2a.
+    total_model_sales()
 
 
 ''' tasks to be completed
-
-Problem 1: Show the Sales over time for a specific sales peron
-Problem 1a: Show the total sales for each of the sales people
-
-Problem 2: Show the total sales for each of the Brands
-Problem 2a: Show the total sales for each of the Car Models
 
 Problem 3: Compare the total sales for more than 1 brand
 Problem 3a: Compare the total sales for more than 1 model
