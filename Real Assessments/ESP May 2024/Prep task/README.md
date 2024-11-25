@@ -8,13 +8,13 @@ This is a teaching tool to be able to get your head around Pandas and matplotlib
 
 Make sure to "Fork" the code. 
 
-MAIN: This is the starting point for you to take and then work from 
-
-Sol1: This the solution for task 1 below
-Sol2: Also includes the solution to task 2
-Sol3: Includes the solution to task 3
-Sol4: Has all solutions
-Solfinal: Has all solutions and robustness built in and fully commented to support learning.
+    MAIN: This is the starting point for you to take and then work from 
+    
+    Sol1: This the solution for task 1 below
+    Sol2: Also includes the solution to task 2
+    Sol3: Includes the solution to task 3
+    Sol4: Has all solutions
+    Solfinal: Has all solutions and robustness built in and fully commented to support learning.
 
 ## Task:
 

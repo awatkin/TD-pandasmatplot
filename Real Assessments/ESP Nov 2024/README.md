@@ -22,17 +22,17 @@ FOLDERS:
 
 These are:
 
-Problem 1: Show the Sales over time for a specific sales peron
-Problem 1a: Show the total sales for each of the sales people
+    Problem 1: Show the Sales over time for a specific sales peron
+    Problem 1a: Show the total sales for each of the sales people
 
-Problem 2: Show the total sales for each of the Brands
-Problem 2a: Show the total sales for each of the Car Models
+    Problem 2: Show the total sales for each of the Brands
+    Problem 2a: Show the total sales for each of the Car Models
 
-Problem 3: Compare the total sales for more than 1 brand
-Problem 3a: Compare the total sales for more than 1 model
+    Problem 3: Compare the total sales for more than 1 brand
+    Problem 3a: Compare the total sales for more than 1 model
 
-Problem 4: Show the sales for a Specific Brand over a period of time
-Problem 4a: Show the sales for a Specific Model over a period of time. 
+    Problem 4: Show the sales for a Specific Brand over a period of time
+    Problem 4a: Show the sales for a Specific Model over a period of time. 
 
 
 The solution must handle data in a secure way.
