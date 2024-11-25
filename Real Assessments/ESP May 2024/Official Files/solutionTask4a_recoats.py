@@ -22,8 +22,10 @@ def main_menu():
         print("########### Please select an option ################")
         print("### 1. Total income by source")
         print("### 2. Income by payment type")  # added second option to look at payment types
-        print("### 3. Total income by payment type and sources")  # added third option for pay types and income sources
-        print("### 4. Total income by day of the week")  # added fourth option to look at pay on each day
+        print("### 3. Total income sources")  # added third option for pay types and income sources
+        print()
+        print()
+        print("### 7. Exit")
         choice = input('Enter your number selection here: ')
 
         try:
@@ -53,6 +55,7 @@ def total_menu():
         print("### 2. Gift Shop")
         print("### 3. Snack Stand")
         print("### 4. Pictures")
+        print("### 5. All sources")
 
         choice = input('Enter your number selction here: ')
 
@@ -246,11 +249,11 @@ def main():
             payment_type_total()
         elif main_menu_choice == "3":
             pass
-        elif main_menu_choice == "4":
-            pass
         elif main_menu_choice == "7":
             print("Thanks for using the system")
             quit()
+        else:
+            print("Not a valid option, try again")
 
 
 # accepted convention to launch code
