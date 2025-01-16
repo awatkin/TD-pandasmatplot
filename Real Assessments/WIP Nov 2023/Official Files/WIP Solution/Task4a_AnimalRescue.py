@@ -1,8 +1,20 @@
 import pandas as pd
+import matplotlib.pyplot as plt  # added import statement to allow graphing to be done
 
 def dfreadin():  #added a subroutine so DF is only created in one place for maintainability and readability
     df = pd.read_csv("Task4a_data.csv")
     return df
+
+def makegraph(df,graph_type, title, x_axis, y_axis):  # new subroutine to call to make a graph
+    if graph_type == "bar":
+        df.plot.bar()
+    else:
+        df.plot()
+    plt.title(title)
+    plt.xlabel(x_axis)
+    plt.ylabel(y_axis)
+    plt.show()
+
 
 def main_menu():
     flag = True
@@ -16,6 +28,7 @@ def main_menu():
         print("########### Please select an option #############")
         print("### 1. Average Social Media Interaction Data")
         print("### 2. Popularity of each post type")
+        print("### 3. Time of day performance for posts")
         print("")
         print("### 7. Quit")
 
@@ -109,6 +122,7 @@ def post_popularity():  # new subroutine to total the interactions for each post
     print("")
     print("Here is the total interactions for each post type")  # friendly way to output
     print(extract)  # prints out the results
+    makegraph(extract,"bar", "Total Interactions per type","Interaction type", "Total Interations")
 
 
 def main():
