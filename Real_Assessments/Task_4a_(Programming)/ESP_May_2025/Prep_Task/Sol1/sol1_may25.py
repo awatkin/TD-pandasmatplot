@@ -37,12 +37,16 @@ def menu():
 
 def issue_rating_counter():  # added a new subroutine to solve the task 1 problem
     df = pd.read_csv("May25_prepdata.csv")  # read in a fresh clean dataframe
+
     issue_counts = df[["Issue Type"]].value_counts()  # This reduces the dataframe to just the Issue type column then counts each issue type
+
     print("The Number of each issue Type is: ")
     print(issue_counts)   # this outputs the count of each issue type
+
     rating_count = df[["Issue Type", "Rating"]]  # This reduces the df to just the 2 cols needed
     rating_count = rating_count.groupby("Issue Type")  # Then groups the data  by issue type
     rating_count = rating_count["Rating"].mean() # then applies an average to the rating for each issue type.
+
     print("The average Rating of each issue Type is: ")
     print(rating_count)  # outputs the results.
 

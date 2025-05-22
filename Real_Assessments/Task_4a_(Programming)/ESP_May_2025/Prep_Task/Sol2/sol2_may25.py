@@ -39,8 +39,10 @@ def menu():
 
 def parcels_effected():  # new subroutine to solve task 2
     df = pd.read_csv("May25_prepdata.csv")  # read in a fresh clean dataframe
+
     effected = df[["Issue Type", "No Of Parcels"]]  # reduces down the df to just needed columns
     effected = effected.groupby(["Issue Type"])["No Of Parcels"].sum()  # this groups by issue type and totals the number of parcels
+
     print("The Number parcels for each issue Type is: ")
     print(effected)  # this outputs the count of each parcel count type
 
