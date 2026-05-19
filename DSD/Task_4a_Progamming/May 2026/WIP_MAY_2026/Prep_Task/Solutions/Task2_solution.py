@@ -1,0 +1,189 @@
+import pandas as pd
+import csv
+import matplotlib.pyplot as plt
+from datetime import datetime
+
+def read_df():
+    df = pd.read_csv("Task4_sample_data.csv", parse_dates=["Date"], dayfirst=True)
+    return df
+
+
+# new subroutine to check the validity of dates
+def date_checker(date):
+    ## important Import time and date at the top
+
+    date_format = "%d/%m/%Y"  # key thing, Y is a caps not lowercase.
+
+    try:
+        # Try to parse the string with the expected format
+        datetime.strptime(date, date_format)
+        return True
+    except ValueError:
+        # If a ValueError is raised, the date is invalid (e.g., Feb 30th)
+        return False
+
+
+# Outputs the initial menu and validates the input
+def main_menu():
+    flag = True
+
+    while flag:
+
+        print("####################################################")
+        print("############### Glenstar Data System ###############")
+        print("####################################################")
+        print("")
+        print("########### Please select an option ################")
+        print("### 1. All Results for one Event type")
+        print("### 2. All Results for one Gender - Task 1")
+        print("### 3. All Results for one Date - Task 2")
+
+        choice = input('Enter your number selection here: ')
+
+        try:
+            int(choice)
+        except:
+            print("Sorry, you did not enter a valid option")
+            flag = True
+        else:
+            print('Choice accepted!')
+            flag = False
+
+    return choice
+
+
+# Submenu for gender, provides type check validation for the input and returns event type as a string
+def gender_picker():
+    flag = True
+
+    while flag:
+
+        print("####################################################")
+        print("################## Gender Types ####################")
+        print("####################################################")
+        print("")
+        print("########## Please select an issue type ##########")
+        print("### 1. Female")
+        print("### 2. Male")
+
+        choice = input('Enter your number selection here: ')
+
+        try:
+            int(choice)
+        except:
+            print("Sorry, you did not enter a valid option")
+            flag = True
+        else:
+            print('Choice accepted!')
+            choice = int(choice)
+            flag = False
+
+    genderList = ["F", "M"]
+
+    gender = genderList[choice - 1]
+
+    return gender
+
+
+# Submenu for events, provides type check validation for the input and returns event type as a string
+def event_picker():
+    flag = True
+
+    while flag:
+
+        print("####################################################")
+        print("################## Event Types #####################")
+        print("####################################################")
+        print("")
+        print("########## Please select an issue type ##########")
+        print("### 1. 100 Metres")
+        print("### 2. 200 Metres")
+        print("### 3. 400 Metres")
+        print("### 4. 5 Kilometres")
+        print("### 5. 10 Kilometres")
+        print("### 6. Half Marathon")
+        print("### 7. Marathon")
+
+        choice = input('Enter your number selection here: ')
+
+        try:
+            int(choice)
+        except:
+            print("Sorry, you did not enter a valid option")
+            flag = True
+        else:
+            print('Choice accepted!')
+            choice = int(choice)
+            flag = False
+
+    eventList = ["100m", "200m", "400m", "5k", "10k", "Half Marathon", "Marathon"]
+
+    event = eventList[choice - 1]
+
+    return event
+
+
+# Creates a new dataframe then counts the number of occurences of the requested issue type
+
+def get_one_event_results(menu_choice):
+    df = read_df()  # Improved this line by adding a
+
+    eventresults = df[df['Event']== menu_choice]
+
+    return eventresults
+
+
+## New subroutine to generate the task 1 results of all results for 1 specific gender
+def get_gender_results(menu_choice):
+    df = read_df()
+    genderresults = df[df['Gender'] == menu_choice]
+
+    return genderresults
+
+
+# new subroutine for task 2 which gets events for a set date.
+def get_date_results():
+    df = read_df()
+    chkflg = True
+
+    while chkflg:
+        wanted_date = input('Enter your date selection here (format dd/mm/yyyy): ')
+
+        if date_checker(wanted_date):
+            chkflg = False
+        else:
+            print("Sorry, you did not enter a valid date")
+
+    df = df[df['Date'] == wanted_date]
+
+    return df
+
+
+
+# Added a main subroutine as needed under industry standard.
+def main():
+
+    chkflg = True  # establish a checkflag for the loop
+
+    while chkflg:
+
+        main_menu_choice = main_menu()
+
+        if main_menu_choice == "1":
+            menu_choice = event_picker()
+            print(get_one_event_results(menu_choice))
+
+        elif main_menu_choice == "2":
+            menu_choice = gender_picker()
+            print(get_gender_results(menu_choice))
+
+        elif main_menu_choice == "3":
+            print(get_date_results())
+
+        else:  # added a final check for if no valid option choice found
+            print("Not A valid manu choice")  # error message before looping again
+
+
+# added new way to launch code, using industry standard convention
+if __name__ == "__main__":
+    main()
