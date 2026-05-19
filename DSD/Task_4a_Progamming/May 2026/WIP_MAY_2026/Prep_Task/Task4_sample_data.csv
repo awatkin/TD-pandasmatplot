@@ -1,0 +1,236 @@
+Date,Gender,Athlete,Place,Prize Money,Event
+03/01/2026,M,Diego Silva,Gold,9899,100m
+03/01/2026,F,Aisha Khan,Gold,14129,200m
+03/01/2026,M,Mateo García,Not Placed,0,400m
+03/01/2026,F,Fatima Al-Mansouri,Silver,6900,5k
+03/01/2026,F,Chen Wei,Silver,7568,10k
+03/01/2026,M,Kwame Mensah,Gold,8673,Half Marathon
+03/01/2026,F,Emily Connor,Gold,13480,Marathon
+03/01/2026,F,Sofia Rossi,Bronze,1168,100m
+03/01/2026,M,Lars Johansson,Bronze,972,200m
+03/01/2026,M,Hiroshi Tanaka,Not Placed,0,400m
+04/01/2026,M,Hiroshi Tanaka,Top 10,389,5k
+04/01/2026,F,Chen Wei,Top 10,206,10k
+04/01/2026,F,Emily Connor,Silver,1924,Half Marathon
+04/01/2026,F,Sofia Rossi,Gold,12152,Marathon
+04/01/2026,M,Lars Johansson,Not Placed,0,100m
+04/01/2026,F,Fatima Al-Mansouri,Not Placed,0,200m
+04/01/2026,M,Mateo García,Gold,6482,400m
+04/01/2026,M,Diego Silva,Not Placed,0,5k
+04/01/2026,M,Kwame Mensah,Bronze,987,10k
+04/01/2026,F,Aisha Khan,Bronze,2597,Half Marathon
+10/01/2026,M,Lars Johansson,Bronze,2213,Marathon
+10/01/2026,F,Emily Connor,Not Placed,0,100m
+10/01/2026,M,Diego Silva,Top 10,107,200m
+10/01/2026,F,Aisha Khan,Bronze,2531,400m
+10/01/2026,F,Sofia Rossi,Not Placed,0,5k
+10/01/2026,F,Chen Wei,Not Placed,0,10k
+10/01/2026,M,Kwame Mensah,Gold,13209,Half Marathon
+10/01/2026,M,Mateo García,Silver,5944,Marathon
+10/01/2026,M,Hiroshi Tanaka,Bronze,1181,100m
+11/01/2026,M,Lars Johansson,Silver,2457,200m
+11/01/2026,M,Diego Silva,Top 10,284,400m
+11/01/2026,M,Kwame Mensah,Silver,6597,5k
+11/01/2026,F,Chen Wei,Not Placed,0,10k
+11/01/2026,M,Hiroshi Tanaka,Bronze,2471,Half Marathon
+11/01/2026,F,Sofia Rossi,Silver,7985,Marathon
+11/01/2026,F,Aisha Khan,Bronze,1314,100m
+17/01/2026,M,Hiroshi Tanaka,Top 10,148,200m
+17/01/2026,M,Mateo García,Not Placed,0,400m
+17/01/2026,M,Lars Johansson,Gold,8837,5k
+17/01/2026,F,Aisha Khan,Silver,3368,10k
+17/01/2026,F,Fatima Al-Mansouri,Bronze,1971,Half Marathon
+17/01/2026,F,Sofia Rossi,Top 10,282,Marathon
+17/01/2026,F,Emily Connor,Gold,10334,100m
+17/01/2026,F,Chen Wei,Silver,4655,200m
+18/01/2026,F,Aisha Khan,Top 10,351,400m
+18/01/2026,F,Fatima Al-Mansouri,Top 10,380,5k
+18/01/2026,M,Hiroshi Tanaka,Silver,6322,10k
+18/01/2026,M,Mateo García,Not Placed,0,Half Marathon
+18/01/2026,F,Chen Wei,Top 10,224,Marathon
+18/01/2026,F,Emily Connor,Not Placed,0,100m
+18/01/2026,M,Lars Johansson,Top 10,485,200m
+18/01/2026,M,Kwame Mensah,Top 10,204,400m
+24/01/2026,F,Aisha Khan,Gold,10525,5k
+24/01/2026,M,Diego Silva,Silver,7854,10k
+24/01/2026,F,Sofia Rossi,Top 10,360,Half Marathon
+24/01/2026,M,Mateo García,Not Placed,0,Marathon
+24/01/2026,F,Chen Wei,Silver,5646,100m
+24/01/2026,M,Hiroshi Tanaka,Silver,3737,200m
+24/01/2026,M,Kwame Mensah,Silver,4409,400m
+25/01/2026,M,Diego Silva,Not Placed,0,5k
+25/01/2026,M,Lars Johansson,Silver,7998,10k
+25/01/2026,F,Emily Connor,Gold,14537,Half Marathon
+25/01/2026,M,Kwame Mensah,Top 10,470,Marathon
+25/01/2026,F,Chen Wei,Not Placed,0,100m
+31/01/2026,M,Hiroshi Tanaka,Top 10,442,200m
+31/01/2026,M,Mateo García,Gold,8498,400m
+31/01/2026,F,Emily Connor,Top 10,216,5k
+31/01/2026,M,Lars Johansson,Silver,7461,10k
+01/02/2026,M,Hiroshi Tanaka,Gold,6742,Half Marathon
+01/02/2026,F,Sofia Rossi,Gold,13964,Marathon
+01/02/2026,M,Lars Johansson,Top 10,345,100m
+01/02/2026,M,Kwame Mensah,Top 10,277,200m
+01/02/2026,M,Mateo García,Not Placed,0,400m
+01/02/2026,F,Aisha Khan,Gold,10870,5k
+07/02/2026,M,Mateo García,Silver,7230,10k
+07/02/2026,M,Lars Johansson,Not Placed,0,Half Marathon
+07/02/2026,F,Sofia Rossi,Not Placed,0,Marathon
+07/02/2026,M,Kwame Mensah,Silver,6998,100m
+07/02/2026,F,Emily Connor,Silver,5200,200m
+07/02/2026,F,Aisha Khan,Silver,7433,400m
+07/02/2026,M,Diego Silva,Gold,7305,5k
+07/02/2026,F,Chen Wei,Gold,9897,10k
+07/02/2026,F,Fatima Al-Mansouri,Top 10,421,Half Marathon
+07/02/2026,M,Hiroshi Tanaka,Bronze,1459,Marathon
+08/02/2026,M,Kwame Mensah,Bronze,1759,100m
+08/02/2026,M,Hiroshi Tanaka,Top 10,455,200m
+08/02/2026,M,Lars Johansson,Not Placed,0,400m
+14/02/2026,F,Fatima Al-Mansouri,Top 10,409,5k
+14/02/2026,M,Mateo García,Not Placed,0,10k
+14/02/2026,M,Diego Silva,Gold,14656,Half Marathon
+14/02/2026,F,Emily Connor,Silver,7283,Marathon
+14/02/2026,F,Chen Wei,Not Placed,0,100m
+14/02/2026,F,Aisha Khan,Top 10,228,200m
+14/02/2026,F,Sofia Rossi,Top 10,201,400m
+15/02/2026,F,Sofia Rossi,Silver,4964,5k
+15/02/2026,F,Emily Connor,Top 10,479,10k
+15/02/2026,F,Chen Wei,Silver,7032,Half Marathon
+21/02/2026,M,Lars Johansson,Silver,2967,Marathon
+21/02/2026,M,Hiroshi Tanaka,Not Placed,0,100m
+21/02/2026,F,Fatima Al-Mansouri,Bronze,2795,200m
+21/02/2026,F,Emily Connor,Silver,4289,400m
+21/02/2026,M,Kwame Mensah,Bronze,1839,5k
+21/02/2026,F,Aisha Khan,Bronze,1400,10k
+21/02/2026,F,Sofia Rossi,Gold,7594,Half Marathon
+21/02/2026,M,Mateo García,Silver,2032,Marathon
+21/02/2026,M,Diego Silva,Silver,5748,100m
+22/02/2026,F,Chen Wei,Gold,9998,200m
+22/02/2026,F,Sofia Rossi,Gold,14810,400m
+22/02/2026,F,Emily Connor,Bronze,2954,5k
+22/02/2026,M,Mateo García,Not Placed,0,10k
+22/02/2026,M,Hiroshi Tanaka,Not Placed,0,Half Marathon
+22/02/2026,F,Fatima Al-Mansouri,Not Placed,0,Marathon
+22/02/2026,M,Diego Silva,Top 10,325,100m
+28/02/2026,F,Aisha Khan,Top 10,238,200m
+28/02/2026,M,Mateo García,Bronze,2533,400m
+28/02/2026,M,Kwame Mensah,Not Placed,0,5k
+28/02/2026,F,Emily Connor,Silver,7439,10k
+28/02/2026,F,Chen Wei,Gold,13245,Half Marathon
+28/02/2026,M,Lars Johansson,Top 10,140,Marathon
+28/02/2026,M,Hiroshi Tanaka,Top 10,348,100m
+28/02/2026,F,Sofia Rossi,Top 10,449,200m
+28/02/2026,M,Diego Silva,Silver,3463,400m
+28/02/2026,F,Fatima Al-Mansouri,Gold,8475,5k
+01/03/2026,F,Emily Connor,Silver,6715,10k
+01/03/2026,F,Chen Wei,Bronze,1906,Half Marathon
+01/03/2026,M,Kwame Mensah,Not Placed,0,Marathon
+01/03/2026,M,Hiroshi Tanaka,Silver,3445,100m
+01/03/2026,M,Lars Johansson,Bronze,810,200m
+07/03/2026,M,Kwame Mensah,Top 10,175,400m
+07/03/2026,F,Aisha Khan,Top 10,375,5k
+07/03/2026,F,Chen Wei,Top 10,181,10k
+07/03/2026,M,Mateo García,Silver,5932,Half Marathon
+07/03/2026,F,Sofia Rossi,Not Placed,0,Marathon
+07/03/2026,F,Fatima Al-Mansouri,Gold,6822,100m
+08/03/2026,F,Sofia Rossi,Top 10,256,200m
+08/03/2026,F,Fatima Al-Mansouri,Gold,12680,400m
+08/03/2026,M,Hiroshi Tanaka,Silver,6670,5k
+08/03/2026,M,Kwame Mensah,Bronze,2842,10k
+08/03/2026,M,Diego Silva,Top 10,189,Half Marathon
+08/03/2026,F,Chen Wei,Gold,8437,Marathon
+08/03/2026,M,Mateo García,Not Placed,0,100m
+08/03/2026,M,Lars Johansson,Silver,2544,200m
+08/03/2026,F,Aisha Khan,Silver,3107,400m
+14/03/2026,M,Lars Johansson,Gold,12669,5k
+14/03/2026,M,Diego Silva,Silver,6999,10k
+14/03/2026,M,Hiroshi Tanaka,Silver,5360,Half Marathon
+14/03/2026,F,Emily Connor,Top 10,430,Marathon
+14/03/2026,F,Aisha Khan,Top 10,162,100m
+14/03/2026,F,Fatima Al-Mansouri,Bronze,2742,200m
+14/03/2026,F,Chen Wei,Not Placed,0,400m
+14/03/2026,F,Sofia Rossi,Top 10,484,5k
+15/03/2026,F,Chen Wei,Bronze,2280,10k
+15/03/2026,M,Kwame Mensah,Top 10,437,Half Marathon
+15/03/2026,F,Emily Connor,Silver,1640,Marathon
+15/03/2026,F,Sofia Rossi,Not Placed,0,100m
+15/03/2026,M,Diego Silva,Silver,1616,200m
+15/03/2026,F,Aisha Khan,Silver,5929,400m
+21/03/2026,F,Chen Wei,Silver,5473,5k
+21/03/2026,M,Lars Johansson,Not Placed,0,10k
+21/03/2026,F,Sofia Rossi,Bronze,1824,Half Marathon
+21/03/2026,M,Hiroshi Tanaka,Bronze,2719,Marathon
+21/03/2026,F,Aisha Khan,Silver,4202,100m
+21/03/2026,M,Mateo García,Top 10,279,200m
+21/03/2026,F,Emily Connor,Not Placed,0,400m
+21/03/2026,M,Diego Silva,Not Placed,0,5k
+22/03/2026,F,Fatima Al-Mansouri,Not Placed,0,10k
+22/03/2026,M,Mateo García,Not Placed,0,Half Marathon
+22/03/2026,F,Chen Wei,Top 10,465,Marathon
+22/03/2026,M,Hiroshi Tanaka,Not Placed,0,100m
+22/03/2026,F,Sofia Rossi,Gold,11953,200m
+22/03/2026,F,Emily Connor,Bronze,2835,400m
+22/03/2026,M,Lars Johansson,Not Placed,0,5k
+22/03/2026,F,Aisha Khan,Bronze,2420,10k
+22/03/2026,M,Diego Silva,Not Placed,0,Half Marathon
+22/03/2026,M,Kwame Mensah,Bronze,2977,Marathon
+28/03/2026,M,Diego Silva,Not Placed,0,100m
+28/03/2026,F,Emily Connor,Top 10,316,200m
+28/03/2026,F,Chen Wei,Bronze,2790,400m
+29/03/2026,M,Kwame Mensah,Silver,7019,5k
+29/03/2026,F,Aisha Khan,Not Placed,0,10k
+29/03/2026,M,Mateo García,Silver,4496,Half Marathon
+29/03/2026,F,Chen Wei,Not Placed,0,Marathon
+29/03/2026,F,Fatima Al-Mansouri,Silver,4605,100m
+04/04/2026,F,Sofia Rossi,Bronze,2788,200m
+04/04/2026,M,Hiroshi Tanaka,Gold,7121,400m
+04/04/2026,M,Diego Silva,Silver,3657,5k
+04/04/2026,F,Fatima Al-Mansouri,Bronze,1549,10k
+05/04/2026,M,Mateo García,Not Placed,0,Half Marathon
+05/04/2026,F,Fatima Al-Mansouri,Bronze,1249,Marathon
+05/04/2026,M,Lars Johansson,Not Placed,0,100m
+05/04/2026,M,Diego Silva,Gold,11403,200m
+05/04/2026,F,Aisha Khan,Gold,14596,400m
+05/04/2026,F,Chen Wei,Not Placed,0,5k
+05/04/2026,M,Hiroshi Tanaka,Not Placed,0,10k
+05/04/2026,F,Emily Connor,Top 10,474,Half Marathon
+05/04/2026,M,Kwame Mensah,Top 10,354,Marathon
+11/04/2026,F,Aisha Khan,Bronze,2617,100m
+11/04/2026,F,Chen Wei,Not Placed,0,200m
+11/04/2026,F,Sofia Rossi,Bronze,2658,400m
+11/04/2026,M,Diego Silva,Silver,6376,5k
+12/04/2026,F,Sofia Rossi,Top 10,140,10k
+12/04/2026,F,Chen Wei,Top 10,222,Half Marathon
+12/04/2026,F,Emily Connor,Gold,11276,Marathon
+12/04/2026,F,Aisha Khan,Silver,1845,100m
+12/04/2026,M,Mateo García,Silver,5139,200m
+12/04/2026,M,Hiroshi Tanaka,Gold,11958,400m
+12/04/2026,M,Kwame Mensah,Bronze,2603,5k
+12/04/2026,F,Fatima Al-Mansouri,Top 10,251,10k
+18/04/2026,F,Emily Connor,Silver,6357,Half Marathon
+18/04/2026,M,Kwame Mensah,Silver,3620,Marathon
+18/04/2026,F,Aisha Khan,Top 10,150,100m
+18/04/2026,M,Lars Johansson,Silver,7290,200m
+18/04/2026,F,Chen Wei,Silver,5617,400m
+18/04/2026,F,Fatima Al-Mansouri,Gold,5251,5k
+18/04/2026,M,Mateo García,Not Placed,0,10k
+18/04/2026,M,Diego Silva,Bronze,1087,Half Marathon
+19/04/2026,F,Emily Connor,Bronze,2339,Marathon
+19/04/2026,F,Aisha Khan,Not Placed,0,100m
+19/04/2026,M,Mateo García,Not Placed,0,200m
+19/04/2026,M,Lars Johansson,Top 10,198,400m
+19/04/2026,M,Hiroshi Tanaka,Not Placed,0,5k
+19/04/2026,M,Kwame Mensah,Gold,7624,10k
+19/04/2026,M,Diego Silva,Not Placed,0,Half Marathon
+19/04/2026,F,Fatima Al-Mansouri,Silver,4022,Marathon
+25/04/2026,F,Emily Connor,Bronze,1221,100m
+25/04/2026,M,Kwame Mensah,Silver,4876,200m
+25/04/2026,M,Lars Johansson,Not Placed,0,400m
+25/04/2026,F,Sofia Rossi,Not Placed,0,5k
+25/04/2026,F,Chen Wei,Top 10,452,10k
+26/04/2026,M,Hiroshi Tanaka,Top 10,154,Half Marathon
+26/04/2026,F,Sofia Rossi,Not Placed,0,Marathon
+26/04/2026,M,Mateo García,Silver,5217,100m
+26/04/2026,F,Aisha Khan,Top 10,330,200m
+26/04/2026,M,Lars Johansson,Silver,6404,400m
+26/04/2026,F,Fatima Al-Mansouri,Not Placed,0,5k
